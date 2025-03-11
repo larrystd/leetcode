@@ -1,1 +1,1 @@
-right
+__main__
