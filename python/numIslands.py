@@ -13,7 +13,9 @@ class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         def dfs(i, j):
             grid[i][j] = '0'  # 遍历到的标记成海洋
-            for a, b in pairwise(dirs):
+            # for a, b in pairwise(dirs):
+            for k, a in enumerate(dirs[:-1]):
+                b = dirs[k+1]
                 x, y = i + a, j + b
                 if 0 <= x < m and 0 <= y < n and grid[x][y] == '1':
                     dfs(x, y)
