@@ -15,7 +15,6 @@ interface TriFunction<A, B, C, R> {
 }
 
 public class ClosureTest {
-    
 
     public static void main(String[] args) {
         int base = 10; // 必须为 effectively final
